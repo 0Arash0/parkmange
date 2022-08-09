@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#00756A">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#898E1D" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bank"
+        android:fontFamily="@font/ordibehesht"
+        android:textSize="45dp"
+        android:layout_marginLeft="178dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imag"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="109dp"
+        android:src="@drawable/icont"
+        android:layout_below="@id/tool"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttons"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="532dp"
+        android:background="@drawable/btn_click"
+        android:fontFamily="@font/bmitra"
+        android:text="محاسبه"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="اپلیکیشن سود من"
+        android:fontFamily="@font/ordibehesht"
+        android:textSize="30sp"
+        android:layout_below="@id/imag"
+        android:layout_marginLeft="127dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_text"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imag"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/bmitra"
+        android:hint="رقم را وارد کنید"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="30dp"
+        android:text="سود یک ماهه (%10)"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:fontFamily="@font/bmitra"/>
+
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switch1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="135dp"
+        android:text="سود یک ماهه (%12)"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:fontFamily="@font/bmitra"/>
+
+
+</RelativeLayout>
